@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Assignment E-Groceries</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/index.css">               
+    </head>
+
+    <body>
+        <header class="header">
+            <div><img src="./Assets/moqups-logo.png" alt="moqups-logo" id="header-logo"></div>
+            <nav class="nav">
+                <div class="nav-item"><a href="#home">Home</a></div>
+                <div class="nav-item nav-center"><a href="#our-package">Our Package</a></div>
+                <div class="nav-item"><a href="#call-us">Call Us</a></div>
+            </nav>
+        </header>
+        
+        <main class="main">
+            <section id="home">
+                <div class="banner">
+                    <h1>Top Rated E-Groceries Shop in Indonesia</h1>
+                    <h3 id="desc1">Every Day with best Ingredients</h3> 
+                </div>
+            </section>
+
+            <section class="main-form">
+
+                <div class="element left">
+                    <div class="slideshow">
+                        <div class="myslides">
+                            <img src="./Assets/img-slideshow1.jpg" alt="img-slideshow" class="img-slideshow"/>
+                            <q class="desc-slideshow">setiap hari beli sayur yang fresh disini</q>
+                            <img src="./Assets/person-icon.png" class="person-icon" alt="person-icon">
+                            <h3>Florence Hughes</h3>
+                            <p class="author-job">Ibu Rumah Tangga, 28</p>
+                        </div>
+                        <div class="myslides">
+                            <img src="./Assets/img-slideshow2.jpg" alt="img-slideshow" class="img-slideshow"/>
+                            <q class="desc-slideshow">setiap hari beli buah yang fresh disini</q>
+                            <img src="./Assets/person-icon.png" class="person-icon" alt="person-icon">
+                            <h3>Mary Smith</h3>
+                            <p class="author-job">Wanita Karir, 31</p>
+                        </div>
+                        <div class="myslides">
+                            <img src="./Assets/img-slideshow3.jpg" alt="img-slideshow" class="img-slideshow"/>
+                            <q class="desc-slideshow">setiap hari beli sayur dan buah yang fresh disini</q>
+                            <img src="./Assets/person-icon.png" class="person-icon" alt="person-icon">
+                            <h3>Leonia High</h3>
+                            <p class="author-job">Pengusaha, 35</p>
+                        </div>                                                
+                    </div>
+
+                    <p id="desc2">Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</p>
+                    <ol class="oldesc">
+                        <li>Your first feature, written in the form of a benefit statement.</li>
+                        <li>Your second feature, written in the form of a benefit statement.</li>
+                        <li>Your third feature, written in the form of a benefit statement.</li>                        
+                    </ol>
+                </div>
+
+                <div class="element right">
+                    <div class="form">
+                        <h2>Contact Us</h2>
+                        <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+                        <form name="message-form" onsubmit="return validateForm()">
+                            <label><b>Name</b></label><br>
+                            <input placeholder="Name" type="text" id="name" name="name" class="input"><br>
+                            <label><b>Email Address</b></label><br>
+                            <input placeholder="Email Address" type="text" id="email" name="email" class="input"><br>
+                            <label><b>What are you interested in?</b></label><br>
+                            <select placeholder="Select option" type="text" id="interest" name="interest" class="input" required>
+                                <option value="">Select Option</option>
+                                <option value="Fresh Vegetable">Fresh Vegetable</option>
+                                <option value="Fresh Fruit">Fresh Fruit</option>
+                            </select><br>
+                            <input type="submit" value="SEND" class="button"><br>                            
+                        </form>                        
+                    </div>
+                </div>
+            </section>
+
+            <section id="our-package">
+                <div class="banner">
+                    <h1>Our Package</h1>
+                </div>
+            </section>
+
+            <section class="packages1">
+                <div class="package">
+                    <img src="./Assets/lamp-icon.png" alt="lamp-icon" class="lamp-icon">
+                    <h3>Fresh Vegetable</h3>
+                    <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+                </div>
+
+                <div class="package">
+                    <img src="./Assets/lamp-icon.png" alt="lamp-icon" class="lamp-icon">
+                    <h3>Fresh Fruit</h3>
+                    <p>Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>
+                </div>
+
+                <div class="package">
+                    <img src="./Assets/lamp-icon.png" alt="lamp-icon" class="lamp-icon">
+                    <h3>Instant Delivery</h3>
+                    <p>Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu</p>
+                </div>
+            </section>
+
+            <section class="packages2">
+                <div class="package">
+                    <img src="./Assets/star-icon.png" alt="star-icon" class="star-icon">
+                    <h3>Kitchen Ingredient</h3>
+                    <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>                    
+                </div>
+
+                <div class="package">
+                    <img src="./Assets/star-icon.png" alt="star-icon" class="star-icon">
+                    <h3>Kitchen Set</h3>
+                    <p>Segala jenis alat masa untuk membantu kamu memasak</p>
+                </div>
+
+                <div class="package">
+                    <img src="./Assets/star-icon.png" alt="star-icon" class="star-icon">
+                    <h3>Bunding Set</h3>
+                    <p>Bingung masak apa? sudah tersedia paket untuk kamu masak di dapur mu</p>
+                </div>
+            </section>
+
+            <section id="call-us">
+                <div class="banner">
+                    <h1>Your Closing Argument Headline</h1>                     
+                </div>
+            </section>
+
+            <section class="closing">                
+                <P>Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel erat fringilla,</P>
+                <button class="button">CALL TO ACTION</button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <img src="./Assets/moqups-logo.png" alt="logo" id="footer-logo">
+            <section id="footer">
+                <div>Terms of Service</div>
+                <div>Privacy Policy</div>
+            </section>            
+            <p>© 2019 RevoU</p>
+        </footer>
+
+        <script src="./JS/index.js"></script>
+    </body>
+
+</html>
